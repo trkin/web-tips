@@ -1,16 +1,16 @@
 # Working with web-tips
 
-Use README.md as the only starting point (do not assume user has installed
-anything like ruby, docker).
+Here you can find a list of other demo projects that you can use as starting
+point.
 
-# Motivation
+## Motivation
 
 Use as your own tips repository. For example you have some script that you just
 created to solve problem in projectA. Let's say tomorrow you need to solve
 similar problem in projectB and day after that in projectC. You have to remember
 where is the latest version that I created.
 Solution is to push to your own repo, for example
-`github.com/username/repo-name/my_script.rb` and than use a comment in a
+`github.com/username/repo-name/my_script.rb` and put that as a comment in a
 projectA, projectB and projectC
 ```
 # github.com/username/repo-name/my_script.rb
@@ -21,13 +21,16 @@ so when you look at the file, you know where you can find latest version of it.
 Also there might be a code that works in one project but does not in another, so
 you want to create an example that works on both.
 
-Naming is difficult since you could change the scope, but you can start with
-`-tops` like `sidekiq-tips`. Later you can create more specific example like
-`sikekiq-avoid-duplicated-jobs`
+Naming your project is difficult since you could change the scope, but you can
+start with `-tips` like `sidekiq-tips`. Later you can create more specific
+example like `sidekiq-avoid-duplicated-jobs`
 
-Another usefull source for learning is
-https://github.com/eliotsykes/real-world-rails
-https://www.hexdevs.com/posts/massive-list-of-open-source-ruby-on-rails-applications-you-can-use-as-a-reference
+# Similar project
+
+Another usefull source for learning is:
+
+* https://github.com/eliotsykes/real-world-rails
+* https://www.hexdevs.com/posts/massive-list-of-open-source-ruby-on-rails-applications-you-can-use-as-a-reference
 
 # Begginer's guide
 
@@ -36,7 +39,12 @@ https://lipanski.com/posts/smallest-docker-image-static-website
 
 TODO: Deploy locally https://docs.dagger.io
 
-# Tips project bootstrap in README
+# Tips how to create a good README
+
+Use README.md as the only starting point (do not assume user has installed
+anything like ruby, docker).
+
+Use commands that user can quickly copy paste and see result.
 
 Replace file inline (sed is good for one line insert, since you can also
 copy/paste the line)
@@ -67,7 +75,7 @@ insert_into_file 'config/initializers/devise.rb', <<-RUBY, after: "Devise.setup 
   ...
 RUBY
 ```
-You can create files or  reference remote files using thor `get`
+You can create files or reference remote files using thor `get`
 https://ruby-doc.org/stdlib-2.7.1/libdoc/bundler/rdoc/Bundler/Thor/Actions.html#method-i-get
 ```
 file 'config/initializers/const.rb', <<'RUBY', force: true

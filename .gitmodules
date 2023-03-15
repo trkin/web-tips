@@ -1,0 +1,3 @@
+[submodule "devise_gem_tips"]
+	path = devise_gem_tips
+	url = git@github.com:duleorlovic/devise_gem_tips.git
