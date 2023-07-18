@@ -3,12 +3,12 @@
 Here you can find a list of other demo projects that you can use as starting
 point.
 
-## Motivation
+# Motivation
 
 Use as your own tips repository. For example you have some script that you just
 created to solve problem in projectA. Let's say tomorrow you need to solve
-similar problem in projectB and day after that in projectC. You have to remember
-where is the latest version that I created.
+similar problem in projectB and after one day in another projectC. You have to
+remember where is the latest version that is created.
 Solution is to push to your own repo, for example
 `github.com/username/repo-name/my_script.rb` and put that as a comment in a
 projectA, projectB and projectC
@@ -32,7 +32,22 @@ Another usefull source for learning is:
 * https://github.com/eliotsykes/real-world-rails
 * https://www.hexdevs.com/posts/massive-list-of-open-source-ruby-on-rails-applications-you-can-use-as-a-reference
 
+# Download
+
+```
+git clone git@github.com:trkin/web-tips.git
+cd web-tips
+git submodule update --init --recursive
+
+```
+
 # Begginer's guide
+
+To create new web-tips
+
+```
+git submodule add git@github.com:duleorlovic/devise_gem_tips.git
+```
 
 TODO: hello world using
 https://lipanski.com/posts/smallest-docker-image-static-website
@@ -65,7 +80,9 @@ sed -i "" -e '/yield/i\
 ```
 Those commands from readme you can paste to shell.
 You can use rails templates which call thor actions which are indempotent like
-`insert_into_file` method with `before:` or `after:`
+`insert_into_file` method with `before:` or `after:` arguments:
+https://github.com/rails/thor/blob/master/lib/thor/actions/inject_into_file.rb
+
 ```
 insert_into_file 'config/initializers/devise.rb', <<-RUBY, before: 'Devise.setup'
   ...

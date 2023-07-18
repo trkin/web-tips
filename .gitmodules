@@ -1,3 +1,6 @@
 [submodule "devise_gem_tips"]
 	path = devise_gem_tips
 	url = git@github.com:duleorlovic/devise_gem_tips.git
+[submodule "aws_tips"]
+	path = aws_tips
+	url = git@github.com:duleorlovic/aws_tips.git
