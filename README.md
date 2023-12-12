@@ -132,6 +132,8 @@ If you have personal blog and you want README to show up there as well you can
 ln -s ~/web-tips/terraform-fundamentals/README.md _posts/2021-12-30-terraform-fundamentals.md
 ```
 when you deploy with `rake` the file is there.
+Also, search with Ack vim follows symlinks so you will get the content in search
+results.
 
 # Provide your keys for hosting
 
